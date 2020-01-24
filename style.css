@@ -1,0 +1,220 @@
+*{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid black; */
+    box-sizing:border-box;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.header div{
+    padding:30px;
+}
+.main-header {
+    position: fixed;
+    z-index: 50;
+    width:100%;
+    top: 0;
+    left: 0;
+}
+nav,
+nav div,
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    justify-content: space-between;
+}
+nav a{
+    padding:20px;
+    text-decoration: none;
+    color:black
+}
+nav a:hover{
+    border-bottom: 3px solid black;
+}
+footer{
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+
+main,
+main header {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+main header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#form{
+  margin:0;
+  padding-top:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#form form {
+  margin:2px;
+  text-align: center;
+}
+#form-jpg{
+  margin:0;
+  width: 30%;
+  height:350px;
+}
+#send{
+  padding:5px;
+}
+.oferta{
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top:150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  
+}
+.oferta-box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.oferta-box img {
+  width: 300px;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+.mySlides {
+    height: auto;
+    /* max-height: 200px; */
+    width: 100%;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.mySlides img {
+    height: auto;
+    max-height: 400px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#anchor{
+    border:2px solid black;
+    padding:10px 36px;
+
+}

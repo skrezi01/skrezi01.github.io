@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Biuro podróży "Podróż się dłuży"</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="header">
+                <h1>Biuro podróży</h1>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="">Promocje</a>
+                    <a href="oferta.html">Oferta</a>
+                    <a href="">Galeria</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </div>
+                <div id="zegar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+        <header>
+            <h2>Oferta <i>"Last Minute"</i></h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/photo1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="img/photo2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="img/photo3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img/photo4.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img/photo5.jpg" style="width:100%">
+                  </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span>  
+                  <span class="dot" onclick="currentSlide(5)"></span>  
+                </div>
+                <button id="anchor">Spotkanie z pingwinami</button>
+        </header>
+    </main>
+    <footer>
+        <div>Copyright&copy; 2019 Daniel Skrężyna klasa 3F</div>
+    </footer>
+</body>
+<script type="text/javascript" src="index.js"> 
+</script>
+</html>
